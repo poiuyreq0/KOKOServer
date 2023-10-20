@@ -26,3 +26,5 @@ CREATE TABLE cafe_benefits (
     benefits_key VARCHAR(255) NOT NULL,
     benefits DOUBLE
 );
+
+SET FOREIGN_KEY_CHECKS = 1;

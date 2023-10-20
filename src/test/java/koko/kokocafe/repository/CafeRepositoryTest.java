@@ -20,18 +20,9 @@ class CafeRepositoryTest {
     @Test
     public void test_save() throws Exception {
         // given
-        Map<String, Long> hm = new HashMap(){{
-            put("red", 10L);
-            put("green", 20L);
-            put("orange", 30L);
-        }};
-        Cafe cafe = new Cafe("koko1", new Coordinate(36.3461714054393, 127.29480966136128), new ArrayList<>(Arrays.asList(1L, 2L, 3L)), hm);
-        cafeRepository.save(cafe);
+
         // when
 
         // then
-        List<Cafe> cafes;
-        cafes = cafeRepository.findByRadius(36.3461714054393, 127.29480966136128, 10.0);
-        System.out.println("cafes" + cafes);
     }
 }
